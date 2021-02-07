@@ -109,26 +109,25 @@ const Index = () => {
                 options to take a break or turn off focus mode easily. */}
               </Text>
               <HStack spacing={[0, 4]} alignSelf="flex-start" flexWrap="wrap">
-                <a
+                <MotionButton
+                  as="a"
+                  bg="main.600"
+                  color="white"
                   target="_blank"
                   href="https://gum.co/focusmode"
                   rel="noopener noreferrer"
+                  px={4}
+                  _hover={{ background: theme.colors.main["accent-600"] }}
+                  _active={{ background: theme.colors.main["accent-700"] }}
+                  alignSelf="flex-start"
+                  mb={[3, 2]}
+                  whileHover={{ scale: 1.04 }}
+                  whileTap={{ scale: 0.94 }}
+                  w={["full", "auto"]}
                 >
-                  <MotionButton
-                    bg="main.600"
-                    color="white"
-                    px={4}
-                    _hover={{ background: theme.colors.main["accent-600"] }}
-                    _active={{ background: theme.colors.main["accent-700"] }}
-                    alignSelf="flex-start"
-                    mb={[3, 2]}
-                    whileHover={{ scale: 1.04 }}
-                    whileTap={{ scale: 0.94 }}
-                    w={["full", "auto"]}
-                  >
-                    Pre-order now $5
-                  </MotionButton>
-                </a>
+                  Pre-order now $5
+                </MotionButton>
+
                 <MotionButton
                   w={["full", "auto"]}
                   bg="main.200"
