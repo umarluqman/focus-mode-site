@@ -152,22 +152,18 @@ const Index = () => {
               <MotionImage
                 top={{ base: -20 }}
                 right={{ base: 0 }}
-                // mt={{ base: 0, md: 0 }}
-                // mr={{ base: 0, md: 0 }}
-                src="/focus-mode-break.png"
+                src="/focus-mode-break.webp"
                 alt=""
                 objectFit="contain"
                 pos={"absolute"}
                 h={{ base: "auto", sm: 450, md: 500 }}
                 boxShadow="0 20px 25px -5px rgb(0 0 0 / 10%), 0 -10px 10px -5px rgb(0 0 0 / 4%)"
-                // variants={BannerVariants}
                 animate={animation}
               />
               <MotionImage
                 left={{ base: 0 }}
                 top={{ base: 10 }}
-                // ml={{ base: 0, md: 0 }}
-                src="/focus-mode-on.png"
+                src="/focus-mode-on.webp"
                 alt=""
                 objectFit="contain"
                 pos={"absolute"}
