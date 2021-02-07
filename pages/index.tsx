@@ -88,7 +88,7 @@ const Index = () => {
               w="480px"
               textAlign="left"
               mt={30}
-              mb={{ base: 32, md: 72 }}
+              mb={{ base: 36, md: 72 }}
             >
               <Heading
                 as="h2"
@@ -107,7 +107,7 @@ const Index = () => {
                 {/* Instead of forcing you to stay focused, this extension gives you
                 options to take a break or turn off focus mode easily. */}
               </Text>
-              <HStack spacing={4} alignSelf="flex-start">
+              <HStack spacing={[0, 4]} alignSelf="flex-start" flexWrap="wrap">
                 <MotionButton
                   bg="main.600"
                   color="white"
@@ -115,13 +115,15 @@ const Index = () => {
                   _hover={{ background: theme.colors.main["accent-600"] }}
                   _active={{ background: theme.colors.main["accent-700"] }}
                   alignSelf="flex-start"
-                  mb={2}
+                  mb={[3, 2]}
                   whileHover={{ scale: 1.04 }}
                   whileTap={{ scale: 0.94 }}
+                  w={["full", "auto"]}
                 >
                   Pre-order now $5
                 </MotionButton>
                 <MotionButton
+                  w={["full", "auto"]}
                   bg="main.200"
                   color="main.900"
                   px={4}
@@ -132,7 +134,7 @@ const Index = () => {
                   whileTap={{ scale: 0.94 }}
                   onClick={onToggle}
                 >
-                  Watch Demo
+                  See how it works in 41s
                 </MotionButton>
               </HStack>
               <Text fontSize="smaller" alignSelf="flex-start" color="gray.600">
@@ -150,7 +152,7 @@ const Index = () => {
               pos="relative"
             >
               <MotionImage
-                top={{ base: -20 }}
+                top={{ base: -24 }}
                 right={{ base: 0 }}
                 src="/focus-mode-break.webp"
                 alt=""
