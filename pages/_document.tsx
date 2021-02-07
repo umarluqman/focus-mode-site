@@ -6,6 +6,7 @@ export default class Document extends NextDocument {
     return (
       <Html>
         <Head />
+        <script src="https://cdn.paritybar.com/paritybar.js"></script>
         <body>
           {/* Make Color mode to persists when you refresh the page. */}
           <ColorModeScript />
