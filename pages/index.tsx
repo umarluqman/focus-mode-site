@@ -39,6 +39,7 @@ const Index = () => {
     cycleAnimation();
   }, []);
 
+  const onMainClick = () => {};
   return (
     <Box>
       <ModalVideo
@@ -108,20 +109,26 @@ const Index = () => {
                 options to take a break or turn off focus mode easily. */}
               </Text>
               <HStack spacing={[0, 4]} alignSelf="flex-start" flexWrap="wrap">
-                <MotionButton
-                  bg="main.600"
-                  color="white"
-                  px={4}
-                  _hover={{ background: theme.colors.main["accent-600"] }}
-                  _active={{ background: theme.colors.main["accent-700"] }}
-                  alignSelf="flex-start"
-                  mb={[3, 2]}
-                  whileHover={{ scale: 1.04 }}
-                  whileTap={{ scale: 0.94 }}
-                  w={["full", "auto"]}
+                <a
+                  target="_blank"
+                  href="https://gum.co/focusmode"
+                  rel="noopener noreferrer"
                 >
-                  Pre-order now $5
-                </MotionButton>
+                  <MotionButton
+                    bg="main.600"
+                    color="white"
+                    px={4}
+                    _hover={{ background: theme.colors.main["accent-600"] }}
+                    _active={{ background: theme.colors.main["accent-700"] }}
+                    alignSelf="flex-start"
+                    mb={[3, 2]}
+                    whileHover={{ scale: 1.04 }}
+                    whileTap={{ scale: 0.94 }}
+                    w={["full", "auto"]}
+                  >
+                    Pre-order now $5
+                  </MotionButton>
+                </a>
                 <MotionButton
                   w={["full", "auto"]}
                   bg="main.200"
@@ -161,6 +168,7 @@ const Index = () => {
                 h={{ base: "auto", sm: 450, md: 500 }}
                 boxShadow="0 20px 25px -5px rgb(0 0 0 / 10%), 0 -10px 10px -5px rgb(0 0 0 / 4%)"
                 animate={animation}
+                onClick={onMainClick}
               />
               <MotionImage
                 left={{ base: 0 }}
