@@ -1,9 +1,7 @@
-import { Box, Grid, Flex, Text, useMediaQuery, chakra } from "@chakra-ui/react";
+import { Box, Grid, Flex, Text, chakra } from "@chakra-ui/react";
 import React from "react";
 
 const Faq = () => {
-  const [xs] = useMediaQuery("(min-width: 40em)");
-
   return (
     <>
       <Flex
@@ -24,7 +22,7 @@ const Faq = () => {
                 what sets this one apart?
               </Text>
               <Text color="#C8F2FF" lineHeight={2}>
-                <chakra.span fontWeight={600} color="white">
+                <chakra.span fontWeight={"600"} color="white">
                   Focus Mode
                 </chakra.span>{" "}
                 provides a simple solution for a seemingly complicated problem

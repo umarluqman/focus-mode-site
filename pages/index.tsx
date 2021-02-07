@@ -1,34 +1,23 @@
 import {
   Box,
+  Button,
+  ButtonProps,
+  chakra,
   Flex,
   Heading,
   HStack,
+  Image,
   Text,
-  useColorMode,
-  useMediaQuery,
+  useDisclosure,
   useTheme,
   VStack,
-  ButtonProps,
-  Button,
-  chakra,
-  useDisclosure,
-  Image,
-  background,
 } from "@chakra-ui/react";
 import { Circle } from "@emotion-icons/feather";
-import {
-  animate,
-  isValidMotionProp,
-  motion,
-  MotionProps,
-  useCycle,
-} from "framer-motion";
+import { motion, MotionProps, useCycle } from "framer-motion";
 import React, { useEffect } from "react";
-
+import ModalVideo from "react-modal-video";
 import Faq from "../components/Faq";
 import Features from "../components/Features";
-import CallToAction from "../components/CallToAction";
-import ModalVideo from "react-modal-video";
 
 export type MotionButtonProps = Omit<ButtonProps, keyof MotionProps> &
   MotionProps & {
