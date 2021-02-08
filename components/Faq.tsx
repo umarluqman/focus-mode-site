@@ -23,7 +23,7 @@ const Faq = () => {
               </Text>
               <Text color="#C8F2FF" lineHeight={2}>
                 <chakra.span fontWeight={"600"} color="white">
-                  Focus Mode
+                  FocusMode
                 </chakra.span>{" "}
                 provides a simple solution for a seemingly complicated problem
                 compare to its alternatives. It reminds people from mindlessly

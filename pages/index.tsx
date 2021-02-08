@@ -71,7 +71,7 @@ const Index = () => {
               />
             </Flex>
             <Heading as="h1" fontSize="2xl">
-              Focus Mode
+              FocusMode
             </Heading>
           </HStack>
           <Flex

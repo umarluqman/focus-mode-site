@@ -70,7 +70,7 @@ const CallToAction = () => {
             fontWeight="extrabold"
             lineHeight={1}
           ></Heading>
-          Get Focus Mode
+          Get FocusMode
           <Text mb={5} color="gray.800">
             <chakra.span fontWeight="bold">
               Turn your productivity to the next level.
