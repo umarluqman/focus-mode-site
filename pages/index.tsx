@@ -18,6 +18,7 @@ import React, { useEffect } from "react";
 import ModalVideo from "react-modal-video";
 import Faq from "../components/Faq";
 import Features from "../components/Features";
+import CallToAction from "../components/CallToAction";
 
 export type MotionButtonProps = Omit<ButtonProps, keyof MotionProps> &
   MotionProps & {
@@ -110,30 +111,12 @@ const Index = () => {
               </Text>
               <HStack spacing={[0, 4]} alignSelf="flex-start" flexWrap="wrap">
                 <MotionButton
-                  as="a"
+                  w={["full", "auto"]}
                   bg="main.600"
                   color="white"
-                  target="_blank"
-                  href="https://gum.co/focusmode"
-                  rel="noopener noreferrer"
                   px={4}
                   _hover={{ background: theme.colors.main["accent-600"] }}
                   _active={{ background: theme.colors.main["accent-700"] }}
-                  alignSelf="flex-start"
-                  mb={[3, 2]}
-                  whileHover={{ scale: 1.04 }}
-                  whileTap={{ scale: 0.94 }}
-                  w={["full", "auto"]}
-                >
-                  Pre-order now $5
-                </MotionButton>
-
-                <MotionButton
-                  w={["full", "auto"]}
-                  bg="main.200"
-                  color="main.900"
-                  px={4}
-                  _hover={{ background: theme.colors.main[200] }}
                   alignSelf="flex-start"
                   mb={2}
                   whileHover={{ scale: 1.04 }}
@@ -141,6 +124,23 @@ const Index = () => {
                   onClick={onToggle}
                 >
                   See how it works in 41s
+                </MotionButton>
+                <MotionButton
+                  as="a"
+                  bg="main.200"
+                  color="main.900"
+                  target="_blank"
+                  href="https://gum.co/focusmode"
+                  rel="noopener noreferrer"
+                  px={4}
+                  _hover={{ background: theme.colors.main[200] }}
+                  alignSelf="flex-start"
+                  mb={[3, 2]}
+                  whileHover={{ scale: 1.04 }}
+                  whileTap={{ scale: 0.94 }}
+                  w={["full", "auto"]}
+                >
+                  Get it now for $5
                 </MotionButton>
               </HStack>
               <Text fontSize="smaller" alignSelf="flex-start" color="gray.600">
@@ -185,7 +185,7 @@ const Index = () => {
       </Flex>
       <Box position="absolute" w="full">
         <Features />
-        {/* <CallToAction /> */}
+        <CallToAction />
         <Faq />
       </Box>
     </Box>

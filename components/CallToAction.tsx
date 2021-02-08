@@ -9,15 +9,18 @@ import {
   useTheme,
 } from "@chakra-ui/react";
 import React from "react";
+import { Circle } from "@emotion-icons/feather";
 
 const CallToAction = () => {
   const theme = useTheme();
   return (
     <Box
       px={{ base: 4, md: 24, lg: 8 }}
-      py={{ base: 16, lg: 20 }}
-      mx="auto"
-      maxW={{ sm: "xl", md: "full", lg: "1024px" }}
+      py={{ base: 14 }}
+      // mx="auto"
+      w="full"
+      // maxW={{ sm: "xl", md: "full", lg: "1024px" }}
+      bg="main.accent-900"
     >
       <Flex
         direction={{ base: "column", lg: "row" }}
@@ -29,24 +32,34 @@ const CallToAction = () => {
         // h="300px"
       >
         <Box pos="relative" w={{ lg: "50%" }}>
-          <Flex bg="white" justify="center" w="full">
-            <Image
-              mt={30}
-              src="/focus-mode-on.png"
-              alt=""
-              objectFit="contain"
-              w="cover"
-              pos={{ lg: "absolute" }}
-              h={{ base: 500 }}
-              boxShadow="0 20px 25px -5px rgb(0 0 0 / 10%), 0 -10px 10px -5px rgb(0 0 0 / 4%)"
-            />
+          <Flex
+            bg="main.accent-900"
+            justify="center"
+            w="full"
+            align="center"
+            h="full"
+          >
+            <Flex
+              justify="center"
+              align="center"
+              p={"44px"}
+              borderRadius="full"
+              bg={"main.200"}
+              mb={3}
+            >
+              <Circle
+                size={140}
+                color={theme.colors.main[700]}
+                strokeWidth={2}
+              />
+            </Flex>
           </Flex>
           <chakra.svg
             pos="absolute"
             top={0}
             right={0}
             h="full"
-            color="white"
+            color="main.accent-900"
             display={{ base: "none", lg: "inline-block" }}
             viewBox="0 0 20 104"
             fill="currentColor"
@@ -58,7 +71,7 @@ const CallToAction = () => {
         <Flex
           direction="column"
           justify="center"
-          bg="white"
+          bg="main.accent-900"
           p={{ base: 8, lg: 16 }}
           pl={{ lg: 10 }}
           w={{ lg: "50%" }}
@@ -69,10 +82,12 @@ const CallToAction = () => {
             fontSize={{ base: "3xl", sm: "4xl" }}
             fontWeight="extrabold"
             lineHeight={1}
-          ></Heading>
-          Get FocusMode
+            color="white"
+          >
+            Get FocusMode
+          </Heading>
           <Text mb={5} color="gray.800">
-            <chakra.span fontWeight="bold">
+            <chakra.span fontWeight="bold" color="white">
               Turn your productivity to the next level.
             </chakra.span>
           </Text>
@@ -86,7 +101,7 @@ const CallToAction = () => {
               alignSelf="flex-start"
               mb={2}
             >
-              Pre-order now $5
+              Get it now for $5
             </Button>
           </Flex>
         </Flex>
