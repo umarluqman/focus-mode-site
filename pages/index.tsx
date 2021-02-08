@@ -102,12 +102,12 @@ const Index = () => {
                 Stay focused like humans, not robots.
               </Heading>
               <Text fontSize="lg" mb={8} color="gray.700" lineHeight="tall">
-                Only access distracting websites with an informed decision,{" "}
+                Instead of forcing you to stay focused, this extension gives you
+                options to take a break or turn off focus mode easily.{" "}
                 <chakra.span color="main.900" fontWeight={"500"}>
-                  no more wasting time without you realised.
+                  {" "}
+                  Only access distracting websites with an informed decision{" "}
                 </chakra.span>{" "}
-                {/* Instead of forcing you to stay focused, this extension gives you
-                options to take a break or turn off focus mode easily. */}
               </Text>
               <HStack spacing={[0, 4]} alignSelf="flex-start" flexWrap="wrap">
                 <MotionButton
