@@ -38,8 +38,8 @@ const Faq = () => {
                 What browser support does this extension support?
               </Text>
               <Text color="#C8F2FF" lineHeight={2}>
-                Only Google Chrome for now, Firefox support will be release on
-                the upcoming update soon.
+                Only Google Chrome for now, Firefox support is high up on our
+                to-do list.
               </Text>
             </Grid>
           </Box>
@@ -82,8 +82,7 @@ const Faq = () => {
                 If I buy now, do I get updates?
               </Text>
               <Text color="#C8F2FF" lineHeight={2}>
-                It's a lifetime deal, purchase once and upgrade forever. More
-                features are coming.
+                It's a lifetime deal, purchase once and upgrade forever.
               </Text>
             </Grid>
           </Box>
