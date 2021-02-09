@@ -123,7 +123,7 @@ const Index = () => {
                   whileTap={{ scale: 0.94 }}
                   onClick={onToggle}
                 >
-                  See how it works in 41s
+                  See how it works in 42s
                 </MotionButton>
                 <MotionButton
                   as="a"

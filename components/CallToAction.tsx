@@ -20,7 +20,7 @@ const CallToAction = () => {
       // mx="auto"
       w="full"
       // maxW={{ sm: "xl", md: "full", lg: "1024px" }}
-      bg="main.accent-900"
+      bg="main.accent-800"
     >
       <Flex
         direction={{ base: "column", lg: "row" }}
@@ -33,7 +33,7 @@ const CallToAction = () => {
       >
         <Box pos="relative" w={{ lg: "50%" }}>
           <Flex
-            bg="main.accent-900"
+            bg="main.accent-800"
             justify="center"
             w="full"
             align="center"
@@ -59,7 +59,7 @@ const CallToAction = () => {
             top={0}
             right={0}
             h="full"
-            color="main.accent-900"
+            color="main.accent-800"
             display={{ base: "none", lg: "inline-block" }}
             viewBox="0 0 20 104"
             fill="currentColor"
@@ -71,7 +71,7 @@ const CallToAction = () => {
         <Flex
           direction="column"
           justify="center"
-          bg="main.accent-900"
+          bg="main.accent-800"
           p={{ base: 8, lg: 16 }}
           pl={{ lg: 10 }}
           w={{ lg: "50%" }}
