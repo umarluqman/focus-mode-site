@@ -130,7 +130,7 @@ const Index = () => {
                   bg="main.200"
                   color="main.900"
                   target="_blank"
-                  href="https://gum.co/focusmode"
+                  href="https://gum.co/focus-mode-app"
                   rel="noopener noreferrer"
                   px={4}
                   _hover={{ background: theme.colors.main[200] }}
@@ -139,8 +139,19 @@ const Index = () => {
                   whileHover={{ scale: 1.04 }}
                   whileTap={{ scale: 0.94 }}
                   w={["full", "auto"]}
+                  fontSize="md"
                 >
-                  Get it now for $5
+                  Pre-order now for{" "}
+                  <chakra.span fontWeight={"500"} ml={2} fontSize="lg">
+                    $5
+                  </chakra.span>
+                  <chakra.span
+                    textDecoration="line-through"
+                    ml={2}
+                    color="main.400"
+                  >
+                    $20
+                  </chakra.span>
                 </MotionButton>
               </HStack>
               <Text fontSize="smaller" alignSelf="flex-start" color="gray.600">
