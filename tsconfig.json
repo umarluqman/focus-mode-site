@@ -19,5 +19,5 @@
     "target": "esnext"
   },
   "exclude": ["node_modules"],
-  "include": ["**/*.ts", "**/*.tsx", "components/Crisp.js"]
+  "include": ["**/*.ts", "**/*.tsx", "components/Crisp.js", "pages/_app.js"]
 }

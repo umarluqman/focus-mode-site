@@ -1,15 +1,14 @@
 import {
   Box,
+  Button,
   chakra,
   Flex,
   Heading,
-  Image,
-  Button,
   Text,
   useTheme,
 } from "@chakra-ui/react";
-import React from "react";
 import { Circle } from "@emotion-icons/feather";
+import React from "react";
 
 const CallToAction = () => {
   const theme = useTheme();
