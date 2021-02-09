@@ -145,13 +145,13 @@ const Index = () => {
                   <chakra.span fontWeight={"500"} ml={2} fontSize="lg">
                     $5
                   </chakra.span>
-                  <chakra.span
+                  {/* <chakra.span
                     textDecoration="line-through"
                     ml={2}
                     color="main.400"
                   >
                     $20
-                  </chakra.span>
+                  </chakra.span> */}
                 </MotionButton>
               </HStack>
               <Text fontSize="smaller" alignSelf="flex-start" color="gray.600">

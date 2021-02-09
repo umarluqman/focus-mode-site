@@ -109,15 +109,6 @@ const CallToAction = () => {
               <chakra.span fontWeight={"500"} ml={2} fontSize="lg">
                 $5
               </chakra.span>
-              {"  "}
-              {"  "}
-              <chakra.span
-                textDecoration="line-through"
-                ml={2}
-                color="main.200"
-              >
-                $20
-              </chakra.span>
             </Button>
           </Flex>
         </Flex>
