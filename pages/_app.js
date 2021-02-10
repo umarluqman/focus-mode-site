@@ -6,15 +6,15 @@ import dynamic from "next/dynamic";
 import { DefaultSeo } from "next-seo";
 import SEO from "../next-seo.config";
 
-const CrispWithNoSSR = dynamic(() => import("../components/Crisp"), {
-  ssr: false,
-});
+// const CrispWithNoSSR = dynamic(() => import("../components/Crisp"), {
+//   ssr: false,
+// });
 
 function App({ Component, pageProps }) {
   return (
     <ChakraProvider resetCSS theme={theme}>
       <DefaultSeo {...SEO} />
-      <CrispWithNoSSR />
+      {/* <CrispWithNoSSR /> */}
       <Component {...pageProps} />
     </ChakraProvider>
   );
