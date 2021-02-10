@@ -126,25 +126,27 @@ const Index = () => {
                   See how it works in 42s
                 </MotionButton>
                 <MotionButton
-                  as="a"
+                  // as="a"
                   bg="main.200"
                   color="main.900"
-                  target="_blank"
-                  href="https://gum.co/focus-mode-app"
-                  rel="noopener noreferrer"
+                  // target="_blank"
+                  // href="https://gum.co/focus-mode-app"
+                  // rel="noopener noreferrer"
                   px={4}
                   _hover={{ background: theme.colors.main[200] }}
                   alignSelf="flex-start"
                   mb={[3, 2]}
-                  whileHover={{ scale: 1.04 }}
-                  whileTap={{ scale: 0.94 }}
+                  // whileHover={{ scale: 1.04 }}
+                  // whileTap={{ scale: 0.94 }}
                   w={["full", "auto"]}
                   fontSize="md"
+                  isDisabled
                 >
-                  Pre-order now for{" "}
+                  Get it now
+                  {/* Pre-order now for{" "}
                   <chakra.span fontWeight={"500"} ml={2} fontSize="lg">
                     $5
-                  </chakra.span>
+                  </chakra.span> */}
                   {/* <chakra.span
                     textDecoration="line-through"
                     ml={2}
@@ -156,7 +158,10 @@ const Index = () => {
               </HStack>
               <Text fontSize="smaller" alignSelf="flex-start" color="gray.600">
                 {" "}
-                Only available for Google Chrome.
+                <chakra.span fontWeight="600">
+                  FocusMode currently in development
+                </chakra.span>{" "}
+                and will only be available for Google Chrome.
               </Text>
             </VStack>
 

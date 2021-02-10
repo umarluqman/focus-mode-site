@@ -94,21 +94,23 @@ const CallToAction = () => {
             <Button
               bg="main.600"
               color="white"
-              as="a"
-              target="_blank"
-              href="https://gum.co/focus-mode-app"
-              rel="noopener noreferrer"
+              // as="a"
+              // target="_blank"
+              // href="https://gum.co/focus-mode-app"
+              // rel="noopener noreferrer"
               px={4}
               _hover={{ background: theme.colors.main["accent-600"] }}
               _active={{ background: theme.colors.main["accent-700"] }}
               alignSelf="flex-start"
               mb={2}
               fontSize="md"
+              isDisabled
             >
-              Pre-order now for{" "}
+              Get it now
+              {/* Pre-order now for{" "}
               <chakra.span fontWeight={"500"} ml={2} fontSize="lg">
                 $5
-              </chakra.span>
+              </chakra.span> */}
             </Button>
           </Flex>
         </Flex>

@@ -40,7 +40,7 @@ export default class Document extends NextDocument {
           <meta name="msapplication-TileColor" content="#2b5797" />
           <meta name="theme-color" content="#ffffff" />
 
-          <script src="https://cdn.paritybar.com/paritybar.js"></script>
+          {/* <script src="https://cdn.paritybar.com/paritybar.js"></script> */}
           <script
             async
             defer
