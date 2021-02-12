@@ -69,7 +69,6 @@ const Faq = () => {
           </Box>
         </Box>
       </Flex>
-      ;
     </>
   );
 };

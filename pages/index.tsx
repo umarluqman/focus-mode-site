@@ -11,6 +11,7 @@ import {
   useDisclosure,
   useTheme,
   VStack,
+  Link,
 } from "@chakra-ui/react";
 import { Circle } from "@emotion-icons/feather";
 import { motion, MotionProps, useCycle } from "framer-motion";
@@ -126,42 +127,27 @@ const Index = () => {
                   See how it works in 42s
                 </MotionButton>
                 <MotionButton
-                  // as="a"
+                  as="a"
                   bg="main.200"
                   color="main.900"
-                  // target="_blank"
-                  // href="https://gum.co/focus-mode-app"
-                  // rel="noopener noreferrer"
+                  target="_blank"
+                  href="https://chrome.google.com/webstore/detail/focus-mode/ollmdedpknmlcdmpehclmgbogpifahdc"
+                  rel="noopener noreferrer"
                   px={4}
                   _hover={{ background: theme.colors.main[200] }}
                   alignSelf="flex-start"
                   mb={[3, 2]}
-                  // whileHover={{ scale: 1.04 }}
-                  // whileTap={{ scale: 0.94 }}
+                  whileHover={{ scale: 1.04 }}
+                  whileTap={{ scale: 0.94 }}
                   w={["full", "auto"]}
                   fontSize="md"
-                  isDisabled
                 >
-                  Get it now
-                  {/* Pre-order now for{" "}
-                  <chakra.span fontWeight={"500"} ml={2} fontSize="lg">
-                    $5
-                  </chakra.span> */}
-                  {/* <chakra.span
-                    textDecoration="line-through"
-                    ml={2}
-                    color="main.400"
-                  >
-                    $20
-                  </chakra.span> */}
+                  Get it now for free
                 </MotionButton>
               </HStack>
               <Text fontSize="smaller" alignSelf="flex-start" color="gray.600">
                 {" "}
-                <chakra.span fontWeight="600">
-                  FocusMode currently in development
-                </chakra.span>{" "}
-                and will only be available for Google Chrome.
+                Only available for Google Chrome
               </Text>
             </VStack>
 
@@ -203,6 +189,17 @@ const Index = () => {
         <Features />
         <CallToAction />
         <Faq />
+        <Flex bg="main.accent-900" p={4} color="white" pr={20}>
+          Made by {"  "}
+          <Link
+            isExternal
+            color="#C8F2FF"
+            href="https://twitter.com/umarlqmn"
+            mx={2}
+          >
+            Umar Luqman
+          </Link>
+        </Flex>
       </Box>
     </Box>
   );
