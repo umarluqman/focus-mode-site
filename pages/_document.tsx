@@ -41,12 +41,8 @@ export default class Document extends NextDocument {
           <meta name="theme-color" content="#ffffff" />
 
           {/* <script src="https://cdn.paritybar.com/paritybar.js"></script> */}
-          <script
-            async
-            defer
-            data-domain="focusmode.app"
-            src="https://plausible.io/js/plausible.js"
-          ></script>
+
+          <script async src="https://cdn.splitbee.io/sb.js"></script>
           <script
             data-name="BMC-Widget"
             data-cfasync="false"
