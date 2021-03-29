@@ -1,6 +1,6 @@
 {
-  "name": "Focusmode",
-  "short_name": "Focusmode",
+  "name": "FocusMode",
+  "short_name": "FocusMode",
   "icons": [
     {
       "src": "/android-chrome-192x192.png",

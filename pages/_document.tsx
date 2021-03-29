@@ -6,7 +6,7 @@ export default class Document extends NextDocument {
     return (
       <Html>
         <Head>
-          <title>Focusmode: Stay focused like humans, not robots</title>
+          <title>FocusMode: Stay focused like humans, not robots</title>
           <meta
             name="viewport"
             content="initial-scale=1.0, width=device-width"

@@ -12,8 +12,11 @@ import {
   useTheme,
   VStack,
   Link,
+  List,
+  ListItem,
+  ListIcon,
 } from "@chakra-ui/react";
-import { Circle } from "@emotion-icons/feather";
+import { Circle, CheckCircle } from "@emotion-icons/feather";
 import { motion, MotionProps, useCycle } from "framer-motion";
 import React, { useEffect } from "react";
 import ModalVideo from "react-modal-video";
@@ -91,7 +94,7 @@ const Index = () => {
               w="480px"
               textAlign="left"
               mt={30}
-              mb={{ base: 36, md: 72 }}
+              mb={{ base: 36, xl: 72 }}
             >
               <Heading
                 as="h2"
@@ -102,13 +105,37 @@ const Index = () => {
               >
                 Stay focused like humans, not robots.
               </Heading>
-              <Text fontSize="lg" mb={8} color="gray.700" lineHeight="tall">
+              {/* <Text fontSize="lg" mb={8} color="gray.700" lineHeight="tall">
                 Instead of forcing you to stay focused, this extension reminds
                 you to get back on the flow.{" "}
                 <chakra.span color="main.900" fontWeight={"500"}>
                   {" "}
                   Only access distracting websites with an informed decision.{" "}
                 </chakra.span>{" "}
+              </Text> */}
+              <List spacing={4} mb={10}>
+                <ListItem>
+                  <ListIcon as={CheckCircle} color="main.900" strokeWidth={3} />
+                  No more wasting time without you realized while browsing.
+                </ListItem>
+                <ListItem>
+                  <ListIcon as={CheckCircle} color="main.900" strokeWidth={3} />
+                  No more forcing yourself to stay focused because an app tell
+                  you so.
+                </ListItem>
+                <ListItem>
+                  <ListIcon as={CheckCircle} color="main.900" strokeWidth={3} />
+                  No more going deep into the settings just to unblock websites.
+                </ListItem>
+              </List>{" "}
+              <Text
+                mb={8}
+                color="main.900"
+                fontWeight={"500"}
+                lineHeight="tall"
+                alignSelf="flex-start"
+              >
+                Only access distracting websites with an informed decision.{" "}
               </Text>
               <HStack spacing={[0, 4]} alignSelf="flex-start" flexWrap="wrap">
                 <MotionButton
@@ -160,25 +187,25 @@ const Index = () => {
               pos="relative"
             >
               <MotionImage
-                top={{ base: -24 }}
+                top={{ base: -25, md: 0 }}
                 right={{ base: 0, lg: -15 }}
                 src="/focusmode-break-dark.webp"
                 alt=""
                 objectFit="contain"
                 pos={"absolute"}
-                h={{ base: "auto", sm: 450, md: 500 }}
+                h={{ base: "auto", sm: 500, md: 500 }}
                 boxShadow="0 20px 25px -5px rgb(0 0 0 / 10%), 0 -10px 10px -5px rgb(0 0 0 / 4%)"
                 animate={animation}
                 onClick={onMainClick}
               />
               <MotionImage
                 left={{ base: 0, lg: -15 }}
-                top={{ base: 10 }}
+                top={{ base: 32 }}
                 src="/focusmode-on-light.webp"
                 alt=""
                 objectFit="contain"
                 pos={"absolute"}
-                h={{ base: "auto", sm: 450, md: 500 }}
+                h={{ base: "auto", sm: 500, md: 500 }}
                 boxShadow="0 20px 25px -5px rgb(0 0 0 / 10%), 0 -10px 10px -5px rgb(0 0 0 / 4%)"
               />
             </Flex>
