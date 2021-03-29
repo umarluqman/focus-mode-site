@@ -8,7 +8,7 @@ import {
   useTheme,
   Img,
 } from "@chakra-ui/react";
-import { Circle } from "@emotion-icons/feather";
+
 import React from "react";
 
 const CallToAction = () => {

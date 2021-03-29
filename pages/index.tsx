@@ -2,7 +2,6 @@ import {
   Box,
   Button,
   ButtonProps,
-  chakra,
   Flex,
   Heading,
   HStack,
