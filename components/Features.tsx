@@ -1,6 +1,13 @@
 import { Box, Grid, Flex, SimpleGrid, Text } from "@chakra-ui/react";
 import React from "react";
-import { Coffee, Globe, Zap, ToggleRight } from "@emotion-icons/feather";
+import {
+  Coffee,
+  Globe,
+  Zap,
+  ToggleRight,
+  Shield,
+  Moon,
+} from "@emotion-icons/feather";
 
 const Features = () => {
   return (
@@ -74,7 +81,40 @@ const Features = () => {
                 </Text>
                 <Text color="#C8F2FF">
                   Turn on and off focus mode by simply toggling the switch
-                  wihout going deep into the settings.
+                  without going deep into the settings.
+                </Text>
+              </Box>
+            </Grid>
+            <Grid
+              alignItems="center"
+              gridTemplateColumns={{ base: "2.5rem 1fr", md: "3.5rem 1fr" }}
+              gap={8}
+            >
+              <Shield size={48} color="white" strokeWidth={1.4} />
+
+              <Box>
+                <Text fontSize="lg" color="white" mb={4}>
+                  Privacy-first
+                </Text>
+                <Text color="#C8F2FF">
+                  Your history and browser data is stored in your own local
+                  computer. In other words, your data is safe.
+                </Text>
+              </Box>
+            </Grid>
+            <Grid
+              alignItems="center"
+              gridTemplateColumns={{ base: "2.5rem 1fr", md: "3.5rem 1fr" }}
+              gap={8}
+            >
+              <Moon size={48} color="white" strokeWidth={1.4} />
+
+              <Box>
+                <Text fontSize="lg" color="white" mb={4}>
+                  Dark mode
+                </Text>
+                <Text color="#C8F2FF">
+                  {`It's ${new Date().getFullYear()} and we are still on the dark mode hype train. At least for us 😉 `}
                 </Text>
               </Box>
             </Grid>

@@ -72,8 +72,8 @@ const Index = () => {
                 strokeWidth={2}
               />
             </Flex>
-            <Heading as="h1" fontSize="2xl">
-              FocusMode
+            <Heading as="h1" fontSize="xl">
+              Focusmode
             </Heading>
           </HStack>
           <Flex
@@ -103,11 +103,11 @@ const Index = () => {
                 Stay focused like humans, not robots.
               </Heading>
               <Text fontSize="lg" mb={8} color="gray.700" lineHeight="tall">
-                Instead of forcing you to stay focused, this extension gives you
-                options to take a break or turn off focus mode easily.{" "}
+                Instead of forcing you to stay focused, this extension reminds
+                you to get back on the flow.{" "}
                 <chakra.span color="main.900" fontWeight={"500"}>
                   {" "}
-                  Only access distracting websites with an informed decision{" "}
+                  Only access distracting websites with an informed decision.{" "}
                 </chakra.span>{" "}
               </Text>
               <HStack spacing={[0, 4]} alignSelf="flex-start" flexWrap="wrap">
@@ -147,7 +147,7 @@ const Index = () => {
               </HStack>
               <Text fontSize="smaller" alignSelf="flex-start" color="gray.600">
                 {" "}
-                Only available for Google Chrome
+                Only available for Google Chrome & Brave browser
               </Text>
             </VStack>
 
@@ -161,8 +161,8 @@ const Index = () => {
             >
               <MotionImage
                 top={{ base: -24 }}
-                right={{ base: 0 }}
-                src="/focus-mode-break.webp"
+                right={{ base: 0, lg: -15 }}
+                src="/focusmode-break-dark.webp"
                 alt=""
                 objectFit="contain"
                 pos={"absolute"}
@@ -172,9 +172,9 @@ const Index = () => {
                 onClick={onMainClick}
               />
               <MotionImage
-                left={{ base: 0 }}
+                left={{ base: 0, lg: -15 }}
                 top={{ base: 10 }}
-                src="/focus-mode-on.webp"
+                src="/focusmode-on-light.webp"
                 alt=""
                 objectFit="contain"
                 pos={"absolute"}

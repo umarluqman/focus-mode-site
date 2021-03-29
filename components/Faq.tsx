@@ -38,8 +38,12 @@ const Faq = () => {
                 What browser support does this extension support?
               </Text>
               <Text color="#C8F2FF" lineHeight={2}>
-                Only Google Chrome for now, Firefox support is high up on our
-                to-do list.
+                Only Google Chrome and Brave browser for now, more browsers will
+                be supported in the future. Let us know on{" "}
+                <Link isExternal color="white">
+                  Twitter
+                </Link>{" "}
+                to speed things up.
               </Text>
             </Grid>
           </Box>
@@ -57,10 +61,10 @@ const Faq = () => {
           <Box borderTop="1px solid #2A4257" pt={3} mb={12}>
             <Grid templateColumns={{ base: "1fr", md: "20rem 1fr" }} gap={8}>
               <Text fontSize="lg" color="white" pb={3}>
-                I have a question but it's not here
+                I have more questions / feedbacks
               </Text>
               <Text color="#C8F2FF" lineHeight={2}>
-                Just hit me up at{" "}
+                Just hit me up ons{" "}
                 <Link isExternal color="white">
                   https://twitter.com/umarlqmn
                 </Link>

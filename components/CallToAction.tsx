@@ -6,6 +6,7 @@ import {
   Heading,
   Text,
   useTheme,
+  Img,
 } from "@chakra-ui/react";
 import { Circle } from "@emotion-icons/feather";
 import React from "react";
@@ -19,36 +20,30 @@ const CallToAction = () => {
       // mx="auto"
       w="full"
       // maxW={{ sm: "xl", md: "full", lg: "1024px" }}
-      bg="main.accent-800"
+      bg="dark.900"
     >
       <Flex
         direction={{ base: "column", lg: "row" }}
         maxW="1024px"
         overflow="hidden"
-        bg="white"
+        bg="inherit"
         border="full"
         mx={{ sm: "auto" }}
         // h="300px"
       >
         <Box pos="relative" w={{ lg: "50%" }}>
-          <Flex
-            bg="main.accent-800"
-            justify="center"
-            w="full"
-            align="center"
-            h="full"
-          >
+          {/* <Flex bg="dark.900" justify="center" w="full" align="center" h="full">
             <Flex
               justify="center"
               align="center"
               p={"44px"}
               borderRadius="full"
-              bg={"main.200"}
+              bg={"dark.200"}
               mb={3}
             >
               <Circle
                 size={140}
-                color={theme.colors.main[700]}
+                color={theme.colors.main[200]}
                 strokeWidth={2}
               />
             </Flex>
@@ -58,19 +53,20 @@ const CallToAction = () => {
             top={0}
             right={0}
             h="full"
-            color="main.accent-800"
+            color="dark.900"
             display={{ base: "none", lg: "inline-block" }}
             viewBox="0 0 20 104"
             fill="currentColor"
           >
             <polygon points="17.3036738 5.68434189e-14 20 5.68434189e-14 20 104 0.824555778 104" />
-          </chakra.svg>
+          </chakra.svg> */}
+          <Img borderRadius={4} src="popup-dark.webp"></Img>
         </Box>
 
         <Flex
           direction="column"
           justify="center"
-          bg="main.accent-800"
+          bg="dark.900"
           p={{ base: 8, lg: 16 }}
           pl={{ lg: 10 }}
           w={{ lg: "50%" }}
