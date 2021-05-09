@@ -15,6 +15,7 @@ import {
   ListItem,
   ListIcon,
 } from "@chakra-ui/react";
+import { ExternalLinkIcon } from "@chakra-ui/icons";
 import { Circle, CheckCircle } from "@emotion-icons/feather";
 import { motion, MotionProps, useCycle } from "framer-motion";
 import React, { useEffect } from "react";
@@ -128,14 +129,23 @@ const Index = () => {
                 </ListItem>
               </List>{" "}
               <Text
-                mb={8}
                 color="main.900"
                 fontWeight={"500"}
                 lineHeight="tall"
                 alignSelf="flex-start"
               >
                 Only access distracting websites with an informed decision.{" "}
-              </Text>
+              </Text>{" "}
+              <Link
+                mb={8}
+                fontWeight={"500"}
+                alignSelf="flex-start"
+                isExternal
+                color="gray.600"
+                href="https://www.notion.so/FocusMode-changelog-62ebecd199d44b9bb29e8c17a87dc393"
+              >
+                View changelog <ExternalLinkIcon mx="2px" />
+              </Link>
               <HStack spacing={[0, 4]} alignSelf="flex-start" flexWrap="wrap">
                 <MotionButton
                   w={["full", "auto"]}
@@ -171,7 +181,12 @@ const Index = () => {
                   Get it now for free
                 </MotionButton>
               </HStack>
-              <Text fontSize="smaller" alignSelf="flex-start" color="gray.600">
+              <Text
+                fontSize="smaller"
+                alignSelf="flex-start"
+                color="gray.600"
+                mb={8}
+              >
                 {" "}
                 Only available for Google Chrome & Brave browser
               </Text>
