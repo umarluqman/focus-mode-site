@@ -65,7 +65,11 @@ const Faq = () => {
               </Text>
               <Text color="#C8F2FF" lineHeight={2}>
                 Just hit me up ons{" "}
-                <Link isExternal color="white">
+                <Link
+                  isExternal
+                  color="white"
+                  href=" https://twitter.com/umarlqmn"
+                >
                   https://twitter.com/umarlqmn
                 </Link>
               </Text>
